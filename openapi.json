@@ -13,6 +13,7 @@
 "paths": {
 "/usuario-schema.json": {
 "get": {
+"operationId": "getUsuarioSchema",
 "summary": "Obtener el JSON Schema del objeto Usuario",
 "responses": {
 "200": {
@@ -36,7 +37,7 @@
 "properties": {
 "Maximum force": { "type": "integer" },
 "Test standard": { "type": "string" },
-"Material": { "type": "string"}
+"Material": { "type": "string" }
 },
 "required": ["Maximum force", "Test standard", "Material"]
 }
