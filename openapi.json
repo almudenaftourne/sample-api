@@ -1,0 +1,45 @@
+{
+"openapi": "3.0.3",
+"info": {
+"title": "API Usuario (estática en GitHub)",
+"version": "1.0.0",
+"description": "API estática que expone el schema de Usuario como JSON."
+},
+"servers": [
+{
+"url": "https://almudenaftourne.github.io/sample-api "
+}
+],
+"paths": {
+"/usuario-schema.json": {
+"get": {
+"summary": "Obtener el JSON Schema del objeto Usuario",
+"responses": {
+"200": {
+"description": "Schema JSON del usuario",
+"content": {
+"application/json": {
+"schema": {
+"$ref": "#/components/schemas/Usuario"
+}
+}
+}
+}
+}
+}
+}
+},
+"components": {
+"schemas": {
+"Usuario": {
+"type": "object",
+"properties": {
+"Maximum force": { "type": "integer" },
+"Test standard": { "type": "string" },
+"Material": { "type": "string"}
+},
+"required": ["Maximum force", "Test standard", "Material"]
+}
+}
+}
+}

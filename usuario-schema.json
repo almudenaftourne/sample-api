@@ -1,0 +1,11 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"title": "Usuario",
+"type": "object",
+"properties": {
+"Maximum force": { "type": "integer" },
+"Test standard": { "type": "string" },
+"Material": { "type": "string"}
+},
+"required": ["Test standard", "Maximum force", "Material"]
+}
